@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ua.t3hnar</groupId>
+    <artifactId>github-parent-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Github project parent pom</name>
+    <inceptionYear>2012</inceptionYear>
+    <url>${github.repository.url}</url>
+    <description>
+        Parent pom for github maven projects. It contains scm setup according to user and repository name
+    </description>
+
+    <properties>
+        <github.user>t3hnar</github.user>
+        <github.repository>${artifactId}</github.repository>
+
+        <github.repository.url>http://github.com/${github.user}/${github.repository}</github.repository.url>
+        <github.connection>scm:git:ssh://git@github.com/${github.user}/${github.repository}</github.connection>
+    </properties>
+
+    <scm>
+        <url>${github.repository.url}</url>
+        <connection>${github.connection}</connection>
+        <developerConnection>${github.connection}</developerConnection>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+
+
+
+    <distributionManagement>
+        <repository>
+            <id>thenewmotion-nexus</id>
+            <url>http://nexus.thenewmotion.com/content/repositories/releases-public</url>
+        </repository>
+        <snapshotRepository>
+            <id>thenewmotion-nexus</id>
+            <url>http://nexus.thenewmotion.com/content/repositories/snapshots-public</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

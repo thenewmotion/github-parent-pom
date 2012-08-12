@@ -29,3 +29,12 @@ Parent pom for github maven projects. It contains scm setup according to user an
         <github.repository>your github repository (not override to use artificatId) </github.repository>
     </properties>
 ```
+
+4. Put this scm block due to [maven bug](http://jira.codehaus.org/browse/MNG-3244)
+```xml
+    <scm>
+        <url>${github.repository.url}</url>
+        <connection>${github.connection}</connection>
+        <developerConnection>${github.connection}</developerConnection>
+    </scm>
+```

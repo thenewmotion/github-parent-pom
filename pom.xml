@@ -44,11 +44,11 @@
 
     <distributionManagement>
         <repository>
-            <id>thenewmotion-nexus</id>
+            <id>thenewmotion</id>
             <url>http://nexus.thenewmotion.com/content/repositories/releases-public</url>
         </repository>
         <snapshotRepository>
-            <id>thenewmotion-nexus</id>
+            <id>thenewmotion</id>
             <url>http://nexus.thenewmotion.com/content/repositories/snapshots-public</url>
         </snapshotRepository>
     </distributionManagement>

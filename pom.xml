@@ -18,7 +18,7 @@
     </description>
 
     <properties>
-        <github.user>t3hnar</github.user>
+        <github.user>thenewmotion</github.user>
         <github.repository>${project.artifactId}</github.repository>
 
         <github.repository.url>http://github.com/${github.user}/${github.repository}</github.repository.url>

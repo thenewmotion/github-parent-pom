@@ -5,7 +5,7 @@
         <maven>3.0</maven>
     </prerequisites>
 
-    <groupId>ua.t3hnar</groupId>
+    <groupId>com.thenewmotion</groupId>
     <artifactId>github-parent-pom</artifactId>
     <version>1.4-SNAPSHOT</version>
     <packaging>pom</packaging>

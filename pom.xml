@@ -30,7 +30,7 @@
         <connection>${github.connection}</connection>
         <developerConnection>${github.connection}</developerConnection>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <developers>
         <developer>
@@ -48,11 +48,11 @@
 
     <distributionManagement>
         <repository>
-            <id>thenewmotion</id>
+            <id>thenewmotion-public-releases</id>
             <url>http://nexus.thenewmotion.com/content/repositories/releases-public</url>
         </repository>
         <snapshotRepository>
-            <id>thenewmotion</id>
+            <id>thenewmotion-public-snapshots</id>
             <url>http://nexus.thenewmotion.com/content/repositories/snapshots-public</url>
         </snapshotRepository>
     </distributionManagement>

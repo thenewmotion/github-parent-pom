@@ -5,36 +5,36 @@ Parent pom for github maven projects. It contains scm setup according to user an
 ##Getting Started
 
 1. Add this repository to your pom.xml:
-```xml
+    ```xml
     <repository>
-        <id>thenewmotion</id>
+        <id>thenewmotion-public-releases</id>
         <name>The New Motion Repository</name>
         <url>http://nexus.thenewmotion.com/content/repositories/releases-public</url>
     </repository>
-```
+    ```
 
 2. Add <parent> block to your pom.xml:
-```xml
+    ```xml
     <parent>
         <groupId>ua.t3hnar</groupId>
         <artifactId>github-parent-pom</artifactId>
-        <version>1.0</version>
+        <version>1.5</version>
     </parent>
-```
+    ```
 
 3. Define github.repository and github.user properties in your pom.xml:
-```xml
+    ```xml
     <properties>
         <github.user>your github user</github.user>
         <github.repository>your github repository (not override to use artificatId) </github.repository>
     </properties>
-```
+    ```
 
 4. Put this scm block due to [maven bug](http://jira.codehaus.org/browse/MNG-3244)
-```xml
+    ```xml
     <scm>
         <url>${github.repository.url}</url>
         <connection>${github.connection}</connection>
         <developerConnection>${github.connection}</developerConnection>
     </scm>
-```
+    ```

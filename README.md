@@ -16,7 +16,7 @@ Parent pom for github maven projects. It contains scm setup according to user an
 2. Add <parent> block to your pom.xml:
     ```xml
     <parent>
-        <groupId>ua.t3hnar</groupId>
+        <groupId>com.thenewmotion</groupId>
         <artifactId>github-parent-pom</artifactId>
         <version>1.7</version>
     </parent>

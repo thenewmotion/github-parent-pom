@@ -18,7 +18,7 @@ Parent pom for github maven projects. It contains scm setup according to user an
     <parent>
         <groupId>ua.t3hnar</groupId>
         <artifactId>github-parent-pom</artifactId>
-        <version>1.5</version>
+        <version>1.7</version>
     </parent>
     ```
 

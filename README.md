@@ -7,7 +7,7 @@ Parent pom for github maven projects. It contains scm setup according to user an
 1. Add this repository to your pom.xml:
     ```xml
     <repository>
-        <id>thenewmotion-public-releases</id>
+        <id>thenewmotion</id>
         <name>The New Motion Repository</name>
         <url>http://nexus.thenewmotion.com/content/repositories/releases-public</url>
     </repository>

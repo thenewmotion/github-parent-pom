@@ -7,7 +7,7 @@
 
     <groupId>com.thenewmotion</groupId>
     <artifactId>github-parent-pom</artifactId>
-    <version>1.7</version>
+    <version>1.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Github project parent pom</name>
@@ -29,7 +29,7 @@
         <url>${github.repository.url}</url>
         <connection>${github.connection}</connection>
         <developerConnection>${github.connection}</developerConnection>
-      <tag>github-parent-pom-1.7</tag>
+      <tag>HEAD</tag>
     </scm>
 
     <developers>
